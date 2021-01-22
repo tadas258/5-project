@@ -1,0 +1,99 @@
+.left-column {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    background-color: rgb(255, 255, 255);
+}
+.left-column > .about {
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.left-text {
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+ a {
+    color: red;
+    text-decoration: none;
+}
+.right-column {
+    display: inline-block;
+    float: right;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+}
+.right-column > .questions {
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.right-text {
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.name-email {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.name {
+    display: inline-block;
+    width: 46%;
+    float: left;
+    padding: 5px 0;
+    border: none;
+    border-bottom: solid grey 1px;
+}
+.email{
+    display: inline-block;
+    width: 46%;
+    float: right;
+    padding: 5px 0;
+    border: none;
+    border-bottom: solid grey 1px;
+}
+.type-message {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: solid grey 1px;
+}
+.click {
+    display: inline-block;
+    float: right;
+}
+button {
+    padding: 10px;
+}
+@media (max-width: 850px) {
+    .left-column {
+        width: 600px;
+        margin: 0 cacl(50% - 300px);
+            
+}
+@media (max-width: 850px) {
+    .right-column {
+        width: 600px;
+        margin: 0 cacl(50% - 300px);
+    } 
+    @media (max-width: 650px) {
+        .left-column {
+            width: 400px;
+            margin: 0 cacl(50% - 200px);
+        }
+        @media (max-width: 650px) {
+            .right-column {
+                width: 400px;
+                margin: 0 cacl(50% - 200px);
+            }
