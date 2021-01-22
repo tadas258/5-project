@@ -1,0 +1,39 @@
+.container {
+    display: inline-block;
+    width: 100% ;
+    background-color: rgb(234, 240, 240);
+    padding: 60px 0;
+}
+.container > .row {
+    width: 1000px;
+    display: inline-block;
+    margin: 0 calc(50% - 500px);
+    background-color: brown;
+}
+.container > .short-row {
+    display: inline-block;
+    width: 600px;
+    margin: 0 calc(50% - 300px);
+    background-color: cadetblue;
+}
+
+@media (max-width: 1100px) {
+    .container > .row {
+        width: 800px;
+        margin: 0 calc(50% - 400px);
+}
+@media (max-width: 850px) {
+    .container > .row {
+        width: 600px;
+        margin: 0 calc(50% - 300px);
+}
+@media (max-width: 650px) {
+    .container > .row {
+        width: 400px;
+        margin: 0 calc(50% - 200px);
+}
+@media (max-width: 650px) {
+    .container > .short-row {
+        width: 400px;
+        margin: 0 calc(50% - 200px);
+}
