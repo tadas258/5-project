@@ -1,0 +1,40 @@
+.container {
+    display: inline-block;
+    width: 100% ;
+    background-color: rgb(255, 255, 255);
+    padding: 60px 0;
+    
+}
+.container > .row {
+    width: 1000px;
+    display: inline-block;
+    margin: 0 calc(50% - 500px);
+    
+}
+.container > .short-row {
+    display: inline-block;
+    width: 652px;
+    margin: 0 calc(50% - 326px);
+
+}
+
+@media (max-width: 1000px) {
+    .container > .row {
+        width: 800px;
+        margin: 0 calc(50% - 400px);
+}
+@media (max-width: 850px) {
+    .container > .row {
+        width: 600px;
+        margin: 0 calc(50% - 300px);
+}
+@media (max-width: 650px) {
+    .container > .row {
+        width: 400px;
+        margin: 0 calc(50% - 200px);
+}
+@media (max-width: 650px) {
+    .container > .short-row {
+        width: 400px;
+        margin: 0 calc(50% - 200px);
+}
