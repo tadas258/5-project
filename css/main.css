@@ -7,8 +7,9 @@
 .left-column > .about {
     display: inline-block;
     width: 100%;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .left-text {
     display: inline-block;
@@ -16,8 +17,9 @@
     font-size: 15px;
     line-height: 25px;
     margin-bottom: 20px;
+    color: rgb(199, 199, 199);
 }
- a {
+.main-link {
     color: red;
     text-decoration: none;
 }
@@ -30,8 +32,9 @@
 .right-column > .questions {
     display: inline-block;
     width: 100%;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .right-text {
     display: inline-block;
@@ -39,6 +42,7 @@
     font-size: 15px;
     line-height: 25px;
     margin-bottom: 20px;
+    color: rgb(199, 199, 199);
 }
 .name-email {
     display: inline-block;
@@ -51,7 +55,7 @@
     float: left;
     padding: 5px 0;
     border: none;
-    border-bottom: solid grey 1px;
+    border-bottom: solid rgba(128, 128, 128, 0.63) 1px;
 }
 .email{
     display: inline-block;
@@ -59,7 +63,7 @@
     float: right;
     padding: 5px 0;
     border: none;
-    border-bottom: solid grey 1px;
+    border-bottom: solid rgba(128, 128, 128, 0.63) 1px;
 }
 .type-message {
     display: inline-block;
@@ -67,21 +71,35 @@
     padding: 10px;
     margin-bottom: 30px;
     border: none;
-    border-bottom: solid grey 1px;
+    border-bottom: solid rgba(128, 128, 128, 0.63) 1px;
 }
 .click {
     display: inline-block;
     float: right;
 }
 button {
-    padding: 10px;
+    padding: 7px 20px;
+    background-color: #EE2166;
+    color: rgba(255, 255, 255, 0.712);
+    border: none;
+    outline: none;
+    
+
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 7px 2px rgb(185, 185, 185);
+}
+button:active {
+    transform: translateY(2px);
+    box-shadow: 1px 1px 7px 2px rgb(150, 150, 150);
 }
 @media (max-width: 850px) {
     .left-column {
         width: 600px;
         margin: 0 cacl(50% - 300px);
-            
-}
+    }
+    
 @media (max-width: 850px) {
     .right-column {
         width: 600px;
@@ -91,9 +109,11 @@ button {
         .left-column {
             width: 400px;
             margin: 0 cacl(50% - 200px);
+            line-break: strict;
         }
         @media (max-width: 650px) {
             .right-column {
                 width: 400px;
+                margin-top: 30px;
                 margin: 0 cacl(50% - 200px);
             }
