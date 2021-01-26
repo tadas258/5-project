@@ -103,6 +103,7 @@ button:active {
 @media (max-width: 850px) {
     .right-column {
         width: 600px;
+        margin-top: 30px;
         margin: 0 cacl(50% - 300px);
     } 
     @media (max-width: 650px) {
@@ -117,3 +118,14 @@ button:active {
                 margin-top: 30px;
                 margin: 0 cacl(50% - 200px);
             }
+            @media (max-width: 450px) {
+                .left-column {
+                    width: 350px;
+                    margin: 0 cacl(50% - 175px);
+                    line-break: strict;
+                }
+                @media (max-width: 450px) {
+                    .right-column {
+                        width: 350px;
+                        margin-top: 30px;
+                        margin: 0 cacl(50% - 175px);
