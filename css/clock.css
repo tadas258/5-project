@@ -1,41 +1,55 @@
 .top-column {
-    display: inline-block;
+    display: flex;
     width: 100%;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 .top-logo {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
     height: 30px;
 }
 .soon {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width:  100%;
     font-size: 45px;
     line-height: 50px;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 .description {
-    display: inline-block;
-    width: 74%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
     margin-bottom: 30px;
     color: rgb(110, 110, 110);
 
 }
 .clock {
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-bottom: 50px;
+
+}
+.top-form {
+    display: flex;
     width: 100%;
-    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
 }
 .top-email {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
     margin-bottom: 15px;
+    width: 60%;
 }
 .top-email > input {
-    display: inline-block;
-    width: 65%;
+    display: flex;
+    width: 100%;
     border: none;
     border-bottom: 1px solid #fff8;
     background-color: rgba(0, 0, 0, 0.0);
@@ -46,7 +60,7 @@
     
 }
 .subscribe {
-    display: inline-block;
+    display: flex;
 }
 .subscribe-button {
     padding: 9px 30px;
@@ -66,6 +80,32 @@
     box-shadow: 1px 1px 7px 2px rgb(150, 150, 150);
 }
 .mouse {
-    display: inline-block;
+    display: flex;
     width: 100%;
+}
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.hours {
+    font-size: 50px;
+}
+
+@media (max-width: 650px) {
+    .clock {
+        display: grid;
+        grid-template-columns: 70px 70px;
+        grid-template-rows: 100px;
+
+        width: 70%;
+        margin-bottom: 50px;
+}
+
+@media (max-width:450px) {
+    .soon {
+        display: flex;
+        justify-content: center;
+        text-align: center;
 }

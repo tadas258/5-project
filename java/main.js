@@ -1,5 +1,6 @@
-import { socials } from './data.js'
-import { socialObjects } from './function.js'
+import { socialLinks } from './data.js'
+import { socialFunction } from './function.js'
+import { clock } from './clock.js'
 
-
-socialObjects('footer > .row', socials)
+socialFunction('footer > .row', socialLinks);
+clock('.clock')
