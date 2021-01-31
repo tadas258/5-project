@@ -1,12 +1,11 @@
-const socialObjectList = [
+const listOfSocialsIcons = [
     'facebook',
     'twitter',
     'user-circle',
     'instagram',
     'podcast',
-    'car',
+    'free-code-camp',
     'snowflake-o',
-    'skype'
 ];
 
-export { socialObjectList }
+export { listOfSocialsIcons }

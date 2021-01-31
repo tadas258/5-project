@@ -1,6 +1,7 @@
-import { socialLinks } from './data.js'
-import { socialFunction } from './function.js'
+import { socials } from './function.js'
+import { socialList } from './data.js'
 import { clock } from './clock.js'
 
-socialFunction('footer > .row', socialLinks);
-clock('.clock')
+
+clock('.clock', '03-01 14:00:00');
+socials('footer > .row', socialList);
