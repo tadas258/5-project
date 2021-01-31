@@ -1,4 +1,4 @@
-const socialLinks = [
+const socialList = [
     {
         href: '#',
         icon: 'facebook',
@@ -21,16 +21,12 @@ const socialLinks = [
     },
     {
         href: '#',
-        icon: 'car',
+        icon: 'free-code-camp',
     },
     {
         href: '#',
         icon: 'snowflake-o',
     },
-    {
-        href: '#',
-        icon: 'skype',
-    },
 ];
 
-export { socialLinks }
+export { socialList };
