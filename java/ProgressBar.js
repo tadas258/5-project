@@ -2,8 +2,10 @@ class Progress {
     constructor(selector, data) {
         this.selector = selector,
             this.data = data
-
+        this.DOM = null;
     }
+
+
 
 
     validSelector() {
@@ -15,33 +17,57 @@ class Progress {
             console.error('ERROR selektorius yra netinkamo formato!')
             return false
         }
-        if (!Array.isArray(this.data) ||
-            this.data === 0) {
-            console.error('ERROR jusu duomenys yrs neteisingi!');
-            return false
-        }
         const DOM = document.querySelector(this.selector);
 
         if (!DOM) {
             console.error('ERROR selektorius neegzistuoja!');
             return false
         }
+        this.DOM = DOM;
 
         return true
 
 
     }
+    generateProgressBar(progressBar) {
+        return `<div class="progress-bar">
+        <div class="texts">
+            <div class="label">${progressBar.label}</div>
+            <div class="value">${this.formatNumber(progressBar.value)}%</div>
+        </div>
+        <div class="bar">
+            <div class="progress" style="width: ${progressBar.value}%;">
+                <div class="loading"></div>
+            </div>
+        </div>
+    </div>`;
+    }
+
+
+    formatNumber(number) {
+        return Math.round(number);
+    }
+
+
 
     inputHtml() {
-        let HTML = 'Progress Barrrrr'
-        const DOM = document.querySelector(this.selector);
-        DOM.innerHTML += HTML;
+        let HTML = ''
+
+
+        for (const progres of this.data) {
+
+            HTML += this.generateProgressBar(progres)
+        }
+
         if (HTML === '') {
             console.error(' ERROR HTML nerasta...!');
             return false
         }
+        this.DOM.innerHTML += HTML;
 
     }
+
+
 
 
 
