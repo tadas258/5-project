@@ -20,7 +20,7 @@
     color: rgb(199, 199, 199);
 }
 .main-link {
-    color: red;
+    color: var(--button-color);
     text-decoration: none;
 }
 .right-column {
