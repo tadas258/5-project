@@ -1,0 +1,42 @@
+.main-form {
+    display: inline-block;
+    width: 100%s;
+}
+.main-form > input,
+.main-form > textarea {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 14px;
+    padding: 10px 2px;
+    line-height: 20px;
+    border-bottom: 1px solid grey;
+    resize: vertical;
+    outline: none;
+
+
+}
+.main-form > textarea {
+    width: 100%;
+    min-height: 82px;
+    max-height: 246px;
+}
+.main-form > .btn {
+    display: inline-block;
+    background-color: var(--button-color);
+    padding: 8px 15px;
+    color: white;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    float: right;
+}
+.main-form > .btn:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.404);
+}
+
+.main-form > .btn:active {
+    outline: none;
+    transform: translateY(2px);
+}

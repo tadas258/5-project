@@ -44,59 +44,8 @@
     margin-bottom: 20px;
     color: rgb(199, 199, 199);
 }
-.name-email {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 20px;
-}
-.name {
-    display: inline-block;
-    width: 46%;
-    float: left;
-    padding: 5px 0;
-    border: none;
-    border-bottom: solid rgba(128, 128, 128, 0.63) 1px;
-    outline:none
-}
-.email{
-    display: inline-block;
-    width: 46%;
-    float: right;
-    padding: 5px 0;
-    border: none;
-    border-bottom: solid rgba(128, 128, 128, 0.63) 1px;
-    outline:none
-}
-.type-message {
-    display: inline-block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: solid rgba(128, 128, 128, 0.63) 1px;
-    outline:none
-}
-.click {
-    display: inline-block;
-    float: right;
-}
-button {
-    padding: 7px 20px;
-    background-color: #EE2166;
-    color: rgba(255, 255, 255, 0.712);
-    border: none;
-    outline: none;
-    
 
-}
-button:hover {
-    cursor: pointer;
-    box-shadow: 1px 1px 7px 2px rgb(185, 185, 185);
-}
-button:active {
-    transform: translateY(2px);
-    box-shadow: 1px 1px 7px 2px rgb(150, 150, 150);
-}
+
 @media (max-width: 850px) {
     .left-column {
         width: 600px;
