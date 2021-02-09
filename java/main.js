@@ -3,7 +3,7 @@ import { socialList } from './data.js'
 import { clock } from './clock.js'
 import { progressValue } from './progres.js'
 import { Progress } from './ProgressBar.js'
-import { Forms } from './forms.js'
+import { Forms } from './Forms.js'
 
 
 clock('.clock', '03-01 14:00:00');

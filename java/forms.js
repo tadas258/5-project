@@ -1,3 +1,5 @@
+import { Validation } from './FormsValidation.js'
+
 class Forms {
     constructor() {
         this.forms = [];
@@ -15,16 +17,31 @@ class Forms {
     }
     addEvent() {
         for (const form of this.forms) {
-            const inputs = form.querySelectorAll('input');
-            const textAreas = form.querySelectorAll('textarea');
-            const allInputs = [...inputs, ...textAreas];
+            const allInputs = form.querySelectorAll('input, textarea')
             const submit = form.querySelector('.btn');
 
             submit.addEventListener('click', (event) => {
                 event.preventDefault();
 
+
                 for (const input of allInputs) {
-                    console.log(input.value);
+                    const valid = input.dataset.validation;
+                    const text = input.value;
+
+                    switch (valid) {
+                        case 'name':
+                            console.log(Validation.isValidName(text));
+                            break;
+                        case 'email':
+                            console.log(Validation.isValidEmail(text));
+                            break;
+                        case 'text':
+                            console.log(Validation.isValidText(text));
+                            break;
+
+                        default:
+                            break;
+                    }
                 }
             })
         }
