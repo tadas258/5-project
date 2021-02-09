@@ -1,9 +1,9 @@
-.main-form {
+.form {
     display: inline-block;
     width: 100%s;
 }
-.main-form > input,
-.main-form > textarea {
+.form > input,
+.form > textarea {
     display: inline-block;
     width: 100%;
     border: none;
@@ -17,12 +17,12 @@
 
 
 }
-.main-form > textarea {
+.form > textarea {
     width: 100%;
     min-height: 82px;
     max-height: 246px;
 }
-.main-form > .btn {
+.form > .btn {
     display: inline-block;
     background-color: var(--button-color);
     padding: 8px 15px;
@@ -32,11 +32,11 @@
     cursor: pointer;
     float: right;
 }
-.main-form > .btn:hover {
+.form > .btn:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.404);
 }
 
-.main-form > .btn:active {
+.form > .btn:active {
     outline: none;
     transform: translateY(2px);
 }
