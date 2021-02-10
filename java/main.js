@@ -11,7 +11,8 @@ socials('footer > .row', socialList);
 
 const progres = new Progress('.left-column', progressValue);
 progres.validSelector()
-progres.inputHtml()
+progres.inputHtml();
+
 
 new Forms()
 
